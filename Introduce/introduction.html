@@ -1,0 +1,117 @@
+<!-- 参考URL
+https://bootsnipp.com/snippets/featured/tabbed-macbook-mockup-slider -->
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Sample</title>
+    <!-- BootstrapのCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <link href="css/basic.css" rel="stylesheet">
+  </head>
+  <body>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <!-- begin panel group -->
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <!-- panel 1 -->
+                    <div class="panel panel-default">
+                        <!--wrap panel heading in span to trigger image change as well as collapse -->
+                        <span class="side-tab" data-target="#tab1" data-toggle="tab" role="tab" aria-expanded="false">
+                            <div class="panel-heading" role="tab" id="headingOne"data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <h4 class="panel-title">自己紹介</h4>
+                            </div>
+                        </span>
+                        
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                            <ol>
+                                <li>名前：佐野　鷹</li>
+                                <li>前職：海上自衛隊　パイロット</li>
+                                <li>趣味：読書、ボクシング</li>
+                            </ol>
+                            </div>
+                        </div>
+                    </div> 
+                    <!-- / panel 1 -->
+
+                    <!-- panel 2 -->
+                    <div class="panel panel-default">
+                        <!--wrap panel heading in span to trigger image change as well as collapse -->
+                        <span class="side-tab" data-target="#tab2" data-toggle="tab" role="tab" aria-expanded="false">
+                            <div class="panel-heading" role="tab" id="headingTwo" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <h4 class="panel-title collapsed">仕事内容</h4>
+                            </div>
+                        </span>
+
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                どんな仕事をしているか
+                                <p>主にプロジェクトの開発に携わっています。開発では、<strong>コードを書いたり</strong>、<strong>フィリピン人のタスクを作成し、そのタスクに割り振ったり</strong>してます。
+                                またこのRuby On RailsのTAとしての仕事もメインの仕事です。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / panel 2 -->
+                    
+                    <!--  panel 3 -->
+                    <div class="panel panel-default">
+                        <!--wrap panel heading in span to trigger image change as well as collapse -->
+                        <span class="side-tab" data-target="#tab3" data-toggle="tab" role="tab" aria-expanded="false">
+                            <div class="panel-heading" role="tab" id="headingThree"  class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <h4 class="panel-title">セブで困ったこと</h4>
+                            </div>
+                        </span>
+
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                <ol>
+                                    <li>食あたり</li>
+                                    <li>虫</li>
+                                    <li>Wifiが遅い</li>
+                                    <li>突然の雨</li>
+                                    <li>クリーニングの店員がなめている</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- / panel-group -->
+            </div> <!-- /col-md-4 -->
+            
+            <div class="col-md-8">
+                <!-- begin macbook pro mockup -->
+                <div class="md-macbook-pro md-glare">
+                    <div class="md-lid">
+                        <div class="md-camera"></div>
+                        <div class="md-screen">
+                        <!-- content goes here -->                
+                            <div class="tab-featured-image">
+                                <div class="tab-content">
+                                    <div class="tab-pane in active" id="tab1">
+                                        <img src="img/same.jpg" alt="tab1" class="img img-responsive">
+                                    </div>
+                                    <div class="tab-pane " id="tab2">
+                                        <img src="img/hikouki.jpg">
+                                    </div>
+                                    <div class="tab-pane fade" id="tab3">            
+                                        <img src="img/komaru.jpg" alt="tab1" class="img img-responsive">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md-base"></div>
+                </div> <!-- end macbook pro mockup -->
+            </div> <!-- / .col-md-8 -->
+        </div> <!--/ .row -->
+    </div> <!-- end sidetab container -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
