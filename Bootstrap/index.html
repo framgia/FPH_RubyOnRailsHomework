@@ -1,0 +1,46 @@
+<!-- 
+    ①ダウンロード
+    　Bootstrapの公式サイトからファイルをダウンロード
+    　jQueryの公式サイトからファイルをダウンロード
+
+    ②プロジェクト作成
+    　bootstrapのフォルダをassetsに変更し、プロジェクト内に移動
+    　jQueryファイルをaseets/js/に移動
+    　index.htmlをプロジェクト内に作成
+    　HTML雛形(html, head, body)を作成
+
+    ③最低限必要な読み込み
+    　bootstrap.cssの読み込み
+    　jQuery.jsの読み込み
+    　bootstrap.jsの読み込み
+ -->
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- bootstrap.cssを読みこむ -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+</head>
+<body>
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link bg-primary">タブ1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link bg-primary">タブ2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link bg-primary">タブ3</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link bg-primary">タブ4</a>
+      </li>
+    </ul>
+    <!-- jQuery.jsを読み込む -->
+    <script type="text/javascript" src="assets/js/jquery-3.2.1.js"></script><!-- 順番は必ずjqueryが先 -->
+    <!-- bootstrap.jsを読み込む -->
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+</body>
+</html>
