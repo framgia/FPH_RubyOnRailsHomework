@@ -1,0 +1,52 @@
+ul {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+.box1 {
+    background-color: #ff7f50;
+}
+
+.address {
+    padding-left: 40px;
+}
+
+.test {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.ul-left {
+    margin-left: 60px;  
+}
+
+.ul-center {
+    text-align: center;
+    margin-left: 200px; 
+}
+
+.ul-right {
+    margin-left: 200px; 
+}
+
+.logo {
+    display: inline-block;  
+}
+
+.box10 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    background: -webkit-repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+    background: repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+}
+.box10 p {
+    margin: 0; 
+    padding: 0;
+}
+
+.logo {
+    margin-left: 550px;
+}
