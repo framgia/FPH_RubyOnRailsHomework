@@ -8,13 +8,16 @@ class TopicsController < ApplicationController
   end
 
   def new
-    @user = Topic.new
+    @topic = Topic.new
   end
 
   def create
     @topic = Topic.new(topic_params)
-    @topic.save
-    redirect_to topics_path
+    if @topic.save
+      redirect_to root_url
+    else
+      render 'new'
+    end
   end
 
   def edit

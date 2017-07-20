@@ -1,4 +1,5 @@
 <%= form_for :topic, url: topics_path do |f| %>
+  <%= render 'error' %>
   <div class="field">
     <%= f.label :title %>
     <%= f.text_field :title %>

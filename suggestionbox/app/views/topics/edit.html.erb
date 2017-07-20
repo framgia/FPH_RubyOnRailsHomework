@@ -1,6 +1,7 @@
 <h1>Edit Topic</h1>
 
 <%= form_for(@topic) do |f| %>
+  <%= render 'error' %>
   <div class="field">
     <%= f.label :title %>
     <%= f.text_field :title %>
