@@ -4,6 +4,7 @@ class TopicsController < ApplicationController
   end
 
   def show
+    @topic = Topic.find(params[:id])
   end
 
   def new
@@ -13,7 +14,7 @@ class TopicsController < ApplicationController
   def create
     @topic = Topic.new(params.require(:topic).permit(:title, :description))
     @topic.save
-    redirect_to @topic
+    redirect_to topics_path
   end
 
   def edit
