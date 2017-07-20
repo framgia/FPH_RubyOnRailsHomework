@@ -12,11 +12,27 @@ class TopicsController < ApplicationController
   end
 
   def create
-    @topic = Topic.new(params.require(:topic).permit(:title, :description))
+    @topic = Topic.new(topic_params)
     @topic.save
     redirect_to topics_path
   end
 
   def edit
+    @topic = Topic.find(params[:id])
   end
+
+  def update
+    @topic = Topic.find(params[:id])
+
+    if @topic.update(topic_params)
+      redirect_to root_url
+    else
+      render 'edit'
+    end
+  end
+
+  private
+    def topic_params
+      params.require(:topic).permit(:title, :description)
+    end
 end

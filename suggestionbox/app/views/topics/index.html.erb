@@ -15,6 +15,9 @@
       <tr>
         <td><%= topic.title %></td>
         <td><%= topic.description %></td>
+        <td>
+          <%= link_to 'Edit', edit_topic_path(topic) %>
+        </td>
       </tr>
     <% end %>
   </tbody>

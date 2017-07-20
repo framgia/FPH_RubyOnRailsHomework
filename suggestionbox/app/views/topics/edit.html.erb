@@ -1,2 +1,20 @@
-<h1>Topics#edit</h1>
-<p>Find me in app/views/topics/edit.html.erb</p>
+<h1>Edit Topic</h1>
+
+<%= form_for(@topic) do |f| %>
+  <div class="field">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit 'Save this Topic' %>
+  </div>
+
+<% end %>
+
+<%= link_to 'Back', topics_path %>
